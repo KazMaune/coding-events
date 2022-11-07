@@ -60,6 +60,7 @@ public class EventController {
             model.addAttribute("categories", eventCategoryRepository.findAll());
             return "events/create";
         }
+
         eventRepository.save(newEvent);
         return "redirect:";
     }
